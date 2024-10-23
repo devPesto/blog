@@ -128,11 +128,10 @@ $showProjectsList }} {{ $projectsUrl := "#" }} {{ if isset .Site.Params
     <span class="h1"><a href="{{ $projectsUrl }}">Projects</a></span>
     <ul class="project-list">
         {{ range .Site.Data.projects.list }}
-        <li class="project-item">
-                <a href="{{ .url }}">
-                    <h3>{{ .name }}<h3>
-                    <p>{{ .desc | markdownify }}</p>
-                </a>
+        <li class="project-item" onclick="location.href='{{.url}}';" style="cursor: pointer">
+                <h2>{{ .name }}<h2>
+                <span>Github</span>
+                <p>{{ .desc | markdownify }}</p>
         </li>
         {{ end }}
     </ul>
