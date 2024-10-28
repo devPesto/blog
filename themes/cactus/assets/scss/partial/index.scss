@@ -31,7 +31,7 @@
 .project-list {
     display: grid;
     list-style: none;
-    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1rem;
     margin: 0 -0.5rem;
     padding: 0;
@@ -42,6 +42,7 @@
         border-radius: 8px; /* Rounded corners */
         transition: background-color 0.3s ease; /* Smooth transition for hover */
         margin: 0 0.5rem;
+        padding: 1rem;
 
         &:hover {
             background-color: #f0f0f0;
@@ -58,9 +59,6 @@
             box-sizing: border-box;
         }
 
-        div {
-            padding: 0.5em;
-        }
         p {
             font-size: 14px;
             font-weight: 300;
